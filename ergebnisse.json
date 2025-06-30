@@ -1,0 +1,57 @@
+[
+  {
+    "benutzer": "admin",
+    "punkte": 7,
+    "gesamt": 1
+  },
+  {
+    "benutzer": "martin",
+    "punkte": 7,
+    "gesamt": 1
+  },
+  {
+    "benutzer": "martin",
+    "punkte": 2,
+    "gesamt": 2
+  },
+  {
+    "benutzer": "admin",
+    "punkte": 1,
+    "gesamt": 1
+  },
+  {
+    "benutzer": "admin",
+    "punkte": 2,
+    "gesamt": 2
+  },
+  {
+    "benutzer": "admin",
+    "punkte": 4,
+    "gesamt": 5
+  },
+  {
+    "benutzer": "admin",
+    "punkte": 1,
+    "gesamt": 1
+  },
+  {
+    "benutzer": "admin",
+    "punkte": 4,
+    "gesamt": 5
+  },
+  {
+    "benutzer": "admin",
+    "punkte": 3,
+    "gesamt": 5
+  },
+  {
+    "benutzer": "admin",
+    "punkte": 4,
+    "gesamt": 5
+  },
+  {
+    "benutzer": "admin",
+    "punkte": 3,
+    "gesamt": 5
+  }
+]

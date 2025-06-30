@@ -1,0 +1,237 @@
+[
+    {
+        "frage": "Was macht der PowerShell-Befehl `Get-Process`?",
+        "optionen": ["Startet einen neuen Prozess", "Zeigt laufende Prozesse an", "Beendet einen Prozess", "Öffnet die PowerShell-Hilfe"],
+        "antwort": 1,
+        "kategorie": "PowerShell",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Was ist PowerShell ideal für?",
+        "optionen": ["Grafikdesign", "Spieleentwicklung", "Systemadministration", "Datenbankmodellierung"],
+        "antwort": 2,
+        "kategorie": "PowerShell",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Wie startet man PowerShell unter Windows?",
+        "optionen": ["Mit dem Befehl 'powershell' im Startmenü", "Mit 'calc'", "Mit 'explorer'", "Mit 'cmd'"],
+        "antwort": 0,
+        "kategorie": "PowerShell",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Wie gibt man in PowerShell Text aus?",
+        "optionen": ["echo", "print", "Write-Output", "display"],
+        "antwort": 2,
+        "kategorie": "PowerShell",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Wie listet man Dateien in einem Verzeichnis auf?",
+        "optionen": ["ls", "dir", "Get-ChildItem", "Alle Antworten sind korrekt"],
+        "antwort": 3,
+        "kategorie": "PowerShell",
+        "level": "Einfach"
+    },
+
+    {
+        "frage": "Welche PowerShell-Funktion dient zum Durchlaufen von Elementen?",
+        "optionen": ["if", "while", "foreach", "case"],
+        "antwort": 2,
+        "kategorie": "PowerShell",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Wie kann man in PowerShell ein Modul importieren?",
+        "optionen": ["Import-Module", "Load-Module", "Use-Module", "Add-Module"],
+        "antwort": 0,
+        "kategorie": "PowerShell",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Wie kann man in PowerShell eine Variable deklarieren?",
+        "optionen": ["var x = 5", "$x = 5", "int x = 5", "x := 5"],
+        "antwort": 1,
+        "kategorie": "PowerShell",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Wie kann man in PowerShell einen Dienst stoppen?",
+        "optionen": ["Stop-Service", "End-Service", "Kill-Service", "Remove-Service"],
+        "antwort": 0,
+        "kategorie": "PowerShell",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Wie kann man in PowerShell ein Skript ausführen?",
+        "optionen": ["./skript.ps1", "run skript.ps1", "exec skript.ps1", "start skript.ps1"],
+        "antwort": 0,
+        "kategorie": "PowerShell",
+        "level": "Mittel"
+    },
+
+    {
+        "frage": "Welche Software ist KEIN Virtualisierungsprodukt?",
+        "optionen": ["VMware Workstation", "Oracle VirtualBox", "Docker", "Hyper-V"],
+        "antwort": 2,
+        "kategorie": "Virtualisierung",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Was beschreibt eine virtuelle Maschine (VM)?",
+        "optionen": ["Ein Cloud-Speicher", "Eine Emulation eines Computers", "Ein physischer Server", "Ein Backup"],
+        "antwort": 1,
+        "kategorie": "Virtualisierung",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Was ist ein Hypervisor?",
+        "optionen": ["Ein Backup-Programm", "Eine Virtualisierungssoftware", "Ein Betriebssystem", "Ein Netzwerkprotokoll"],
+        "antwort": 1,
+        "kategorie": "Virtualisierung",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Was ist ein Vorteil von Virtualisierung?",
+        "optionen": ["Mehr Hardwarekosten", "Bessere Ressourcenauslastung", "Weniger Flexibilität", "Langsamere Systeme"],
+        "antwort": 1,
+        "kategorie": "Virtualisierung",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Welcher Begriff steht für das gleichzeitige Ausführen mehrerer VMs?",
+        "optionen": ["Multiplexing", "Multithreading", "Konsolidierung", "Partitionierung"],
+        "antwort": 2,
+        "kategorie": "Virtualisierung",
+        "level": "Einfach"
+    },
+
+    {
+        "frage": "Was ist eine wichtige Voraussetzung für die Live-Migration virtueller Maschinen?",
+        "optionen": ["Der Zielhost muss Linux-basiert sein", "Beide Hosts müssen im selben Netzwerk sein", "Die VM muss ausgeschaltet sein", "Die Hyper-V-Version muss unterschiedlich sein"],
+        "antwort": 1,
+        "kategorie": "Virtualisierung",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Was ist eine vCPU?",
+        "optionen": ["Virtuelle CPU einer VM", "Virtuelle Festplatte", "Virtuelle Netzwerkkarte", "Virtuelles Backup"],
+        "antwort": 0,
+        "kategorie": "Virtualisierung",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Was ist ein Snapshot in der Virtualisierung?",
+        "optionen": ["Ein Backup des Hostsystems", "Eine Momentaufnahme des VM-Zustands", "Ein Netzwerkprotokoll", "Ein Hypervisor"],
+        "antwort": 1,
+        "kategorie": "Virtualisierung",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Was ist eine VM-Template?",
+        "optionen": ["Eine Vorlage für neue VMs", "Ein Backup", "Ein Netzwerkprotokoll", "Ein Hypervisor"],
+        "antwort": 0,
+        "kategorie": "Virtualisierung",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Was ist Paravirtualisierung?",
+        "optionen": ["Eine Virtualisierung ohne Hypervisor", "Eine Virtualisierung mit modifiziertem Gastbetriebssystem", "Eine Hardware-Virtualisierung", "Eine Netzwerkvirtualisierung"],
+        "antwort": 1,
+        "kategorie": "Virtualisierung",
+        "level": "Mittel"
+    },
+
+    {
+        "frage": "Wozu dient die Automatisierung in der IT?",
+        "optionen": ["Zur Verbesserung der IT-Sicherheit", "Zur manuellen Fehlerkorrektur", "Zur Reduzierung von Routineaufgaben", "Zum Einspielen von Werbung"],
+        "antwort": 2,
+        "kategorie": "Automatisierung",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Welches Tool wird häufig für die Automatisierung von IT-Prozessen verwendet?",
+        "optionen": ["PowerPoint", "Jenkins", "MS Paint", "Wireshark"],
+        "antwort": 1,
+        "kategorie": "Automatisierung",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Was ist ein typischer Vorteil von Automatisierung?",
+        "optionen": ["Mehr Fehler", "Weniger Effizienz", "Schnellere Abläufe", "Höhere Kosten"],
+        "antwort": 2,
+        "kategorie": "Automatisierung",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Was ist ein Batch-Skript?",
+        "optionen": ["Ein Textdokument", "Ein Automatisierungsskript", "Ein Bild", "Ein Musikstück"],
+        "antwort": 1,
+        "kategorie": "Automatisierung",
+        "level": "Einfach"
+    },
+    {
+        "frage": "Welches Betriebssystem ist für Cronjobs bekannt?",
+        "optionen": ["Windows", "Linux/Unix", "macOS", "Android"],
+        "antwort": 1,
+        "kategorie": "Automatisierung",
+        "level": "Einfach"
+    },
+
+    {
+        "frage": "Welches Skript-Tool wird häufig für die Automatisierung von Windows-Systemen verwendet?",
+        "optionen": ["Bash", "PowerShell", "Python", "Perl"],
+        "antwort": 1,
+        "kategorie": "Automatisierung",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Was ist ein typischer Vorteil von CI/CD-Pipelines in der IT-Automatisierung?",
+        "optionen": [
+            "Manuelle Softwareinstallation",
+            "Schnellere und zuverlässigere Deployments",
+            "Erhöhte Hardwarekosten",
+            "Reduzierte Netzwerksicherheit"
+        ],
+        "antwort": 1,
+        "kategorie": "Automatisierung",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Was beschreibt Infrastructure as Code (IaC) am besten?",
+        "optionen": [
+            "Manuelle Serverkonfiguration",
+            "Automatisierte Verwaltung von IT-Infrastruktur per Code",
+            "Papierbasierte Dokumentation",
+            "Hardware-Design"
+        ],
+        "antwort": 1,
+        "kategorie": "Automatisierung",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Welches Tool wird oft für das Konfigurationsmanagement in der IT-Automatisierung verwendet?",
+        "optionen": [
+            "Photoshop",
+            "Ansible",
+            "Excel",
+            "Word"
+        ],
+        "antwort": 1,
+        "kategorie": "Automatisierung",
+        "level": "Mittel"
+    },
+    {
+        "frage": "Was ist ein typischer Anwendungsfall für einen Cronjob?",
+        "optionen": [
+            "Regelmäßiges automatisches Ausführen von Skripten",
+            "Erstellen von PowerPoint-Präsentationen",
+            "Manuelles Backup",
+            "Starten von Videospielen"
+        ],
+        "antwort": 0,
+        "kategorie": "Automatisierung",
+        "level": "Mittel"
+    }
+]
