@@ -4,6 +4,7 @@ from user_manager import UserManager
 from quiz_logic import QuizLogic
 import json
 import os
+from PIL import Image, ImageTk  
 
 def lade_fragen():
     if os.path.exists("fragen.json"):
@@ -19,12 +20,22 @@ class QuizApp:
     def __init__(self, root):
         self.root = root
         self.root.title("IT-Wissensquiz")
-        self.user_manager = UserManager()
+
+        fenster_breite = 900
+        fenster_hoehe = 500
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+        x = int((screen_width / 2) - (fenster_breite / 2))
+        y = int((screen_height / 2) - (fenster_hoehe / 2))
+        self.root.geometry(f"{fenster_breite}x{fenster_hoehe}+{x}+{y}")
+
+        self.user_manager = UserManager()  # <--- Diese Zeile ist wichtig!
         self.quiz = None
         self.username = ""
         self.kategorie = None
         self.level = None
         self.login_fenster()
+
 
     def login_fenster(self):
         self.clear()

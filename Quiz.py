@@ -30,10 +30,24 @@ class QuizApp:
     def __init__(self, root):
         self.root = root
         self.root.title("IT-Wissensquiz")
+
+        # Fenstergröße und Position (z.B. 900x500 Pixel, zentriert)
+        fenster_breite = 900
+        fenster_hoehe = 500
+        screen_width = self.root.winfo_screenwidth()
+        screen_height = self.root.winfo_screenheight()
+        x = int((screen_width / 2) - (fenster_breite / 2))
+        y = int((screen_height / 2) - (fenster_hoehe / 2))
+        self.root.geometry(f"{fenster_breite}x{fenster_hoehe}+{x}+{y}")
+
         self.username = ""
         self.kategorie = None
         self.level = None
         self.login_fenster()
+
+    def clear(self):
+        for widget in self.root.winfo_children():
+            widget.destroy()
 
     def login_fenster(self):
         self.clear()
@@ -85,7 +99,7 @@ class QuizApp:
         self.punkte = 0
 
         self.clear()
-        self.frage_label = tk.Label(self.root, text="", font=("Arial", 14), wraplength=500, justify="left")
+        self.frage_label = tk.Label(self.root, text="", font=("Arial", 14), wraplength=500, justify="left", bg="#ffffff", fg="#000000")
         self.frage_label.pack(pady=20)
 
         self.var = tk.IntVar()
@@ -101,7 +115,7 @@ class QuizApp:
         self.zeige_frage()
 
     def zeige_frage(self):
-        frage = self.fragen[self.frage_index]  # statt fragen
+        frage = self.fragen[self.frage_index]
         self.frage_label.config(text=f"Frage {self.frage_index + 1}: {frage['frage']}")
         self.var.set(-1)
         for i, option in enumerate(frage["optionen"]):
@@ -113,13 +127,13 @@ class QuizApp:
             messagebox.showwarning("Hinweis", "Bitte wähle eine Antwort aus.")
             return
 
-        richtige_antwort = self.fragen[self.frage_index]["antwort"]  # statt fragen
+        richtige_antwort = self.fragen[self.frage_index]["antwort"]
         if ausgewählt == richtige_antwort:
             self.punkte += 1
 
         self.frage_index += 1
 
-        if self.frage_index >= len(self.fragen):  # statt fragen
+        if self.frage_index >= len(self.fragen):
             self.zeige_ergebnis()
         else:
             self.zeige_frage()
@@ -161,11 +175,11 @@ class QuizApp:
     def kategorie_auswahl(self):
         self.clear()
         tk.Label(self.root, text="Kategorie wählen:").pack(pady=5)
-        self.kategorie_var = tk.StringVar(value="PowerShell")  # Standardwert gesetzt
+        self.kategorie_var = tk.StringVar(value="PowerShell")
         tk.OptionMenu(self.root, self.kategorie_var, "PowerShell", "Virtualisierung", "Automatisierung").pack(pady=5)
 
         tk.Label(self.root, text="Schwierigkeitsgrad wählen:").pack(pady=5)
-        self.level_var = tk.StringVar(value="Einfach")  # Standardwert gesetzt
+        self.level_var = tk.StringVar(value="Einfach")
         tk.OptionMenu(self.root, self.level_var, "Einfach", "Mittel").pack(pady=5)
 
         tk.Button(self.root, text="Quiz starten", command=self.set_kategorie_level).pack(pady=10)
@@ -174,10 +188,6 @@ class QuizApp:
         self.kategorie = self.kategorie_var.get()
         self.level = self.level_var.get()
         self.start_quiz()
-
-    def clear(self):
-        for widget in self.root.winfo_children():
-            widget.destroy()
 
 # Starte GUI
 if __name__ == "__main__":
